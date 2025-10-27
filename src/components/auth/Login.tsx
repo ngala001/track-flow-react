@@ -40,7 +40,7 @@ const Login = () => {
             toast.success(data.success,{duration: 950})
             
             setTimeout(() => {
-                navigate("/tickets")
+                navigate("/")
             },1000)
             
         } catch (error) {
