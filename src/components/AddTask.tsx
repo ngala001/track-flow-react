@@ -24,7 +24,7 @@ const AddTask = () => {
         try {
             setLoading(true)
 
-            const res = await fetch("http://127.0.0.1:8080/tasks",{
+            const res = await fetch("https://track-flow-1.onrender.com/tasks",{
                 method:"POST",
                 headers: {
                     "Content-Type":"application/json",
