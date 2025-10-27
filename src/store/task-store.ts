@@ -25,7 +25,7 @@ export const useTaskStore = create<InitialState>((set) => ({
         try {
             set({loading: true, error: null})
 
-            const res = await fetch("http://127.0.0.1:8080/tasks",{
+            const res = await fetch("https://track-flow-1.onrender.com/tasks",{
               headers:{
                   "Content-Type":"application/json",
                   "Authorization":`Bearer ${localStorage.getItem('token')}`

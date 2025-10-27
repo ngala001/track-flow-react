@@ -22,7 +22,7 @@ export const userStore = create<InitialStateType>((set) => ({
  getUser: async(id: string) => {
     try {
         set({loading: true, error: null})
-        const res = await fetch(`http://127.0.0.1:8080/users/user/${id}`,{
+        const res = await fetch(`https://track-flow-1.onrender.com/users/user/${id}`,{
             headers: {
                 "Content-Type":"application/json",
                 "Authorization":`Bearer ${localStorage.getItem("token")}`

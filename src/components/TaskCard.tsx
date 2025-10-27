@@ -16,7 +16,7 @@ const TaskCard = ({title, content, status, createdAt, id }: TaskProps) => {
 
   const updateStatus = async(status: string) => {
       try {
-        const res = await fetch(`http://127.0.0.1:8080/tasks/${id}`,{
+        const res = await fetch(`https://track-flow-1.onrender.com/tasks/${id}`,{
           method: "PATCH",
            headers: { 
             "Content-Type":"application/json",
@@ -44,7 +44,7 @@ const TaskCard = ({title, content, status, createdAt, id }: TaskProps) => {
      const removeTask = async() => {
       if(!id) return
         try {
-            const res = await fetch(`http://127.0.0.1:8080/tasks/${id}`,{
+            const res = await fetch(`https://track-flow-1.onrender.com/tasks/${id}`,{
                 method:"DELETE",
                 headers: {
                     "Content-Type":"application/json",
