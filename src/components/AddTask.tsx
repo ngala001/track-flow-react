@@ -55,7 +55,7 @@ const AddTask = () => {
         <div>
             <h1 className="text-lg font-semibold mb-6">Create new task by filling details below;</h1>
         </div>
-        <form onSubmit={createTask} className="min-w-lg grid gap-4 shadow-sm p-6">
+        <form onSubmit={createTask} className="min-w-lg mx-auto grid gap-4 shadow-sm p-6">
             <div className="grid gap-3">
                 <label htmlFor="title" className="label">Title:</label>
                 <input 
